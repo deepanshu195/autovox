@@ -19,29 +19,36 @@
 
 
         <!-- personal css -->
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="drawer.css">
         <link rel="stylesheet" href="cards.css">
         <link rel="stylesheet" href="index.css">
-        
+        <link rel="stylesheet" href="img-media-query.css">
+    
 </head>
-<header>
+<header class="header" id="myHeader">
     <div class="flex center">
         <span class="autovox">
             <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606274738/tanmayproject/autovox_ICON_yb1drc.png" alt="autovox" />
                 autovox.ai
     </span>
     </div>
-    <div class="">
+    <div class="show-from-laptop">
         <span class="head-nav">
     Our Story
         </span>
         <span class="head-nav">
-            Use Case&nbsp;&#9660;
+           <a href="#use-case-div"> Use Case </a>&nbsp;&#9660;
         </span>
 
         <button class="get-in-touch-color get-in-touch-1">GET IN TOUCH </button>
+    
     </div>
+    <span style="font-size:30px;cursor:pointer" class="show-till-laptop" onclick="openNav()">&#9776; </span>
+
 </header>
-<body>
+
+<body id="body">
     <!-- section-1  -->
     <div class="section-1 height-94">
         <div class="section section  voice-main-section section-sub-1 height-94" style="width: 100%;" >  
@@ -56,7 +63,9 @@
                 <br />
                 <br />
                 <span class="ai-powered">
-                    AI powered audio transcription in Indian <br /> regional languages
+            AI powered Speech Processing in
+           
+         <br /> Indian regional languages
                 </span>
                 <br />
                 <br />
@@ -65,7 +74,7 @@
         </div>
     </div>
     <!-- section ----2--- -->
-    <div class="section height-100 section-2 text-align-center" style="background-color: grey;">
+    <div class="section height-100 section-2 text-align-center">
         <div class="flex justify-content-center">
             <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606276592/tanmayproject/section_icon_b7m0wd.png"  class="margin-top-5 center" alt="autovox"/>
             <br />
@@ -82,24 +91,27 @@
         <br />
         <div>
             <span class="audio-transcription">
-                Audio transcription in English, Hindi Kannada, Tamil and Over<br /> 11 indian regional languages
+       
+    Speech Processing in Indian English, Hindi
+<br />Kannada, Tamil and Over 11 Indian regional languages
+
             </span>
         </div>
-        <div class="relative" style="margin-top: 140px;">
-            <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606278495/tanmayproject/Rectangle_13_yaifjj.png" class="left-image absolute" />
+        <div class="relative margin-change-language-barier">
+            <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606278495/tanmayproject/Rectangle_13_yaifjj.png" class="left-image absolute language-side-images" />
             <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606278495/tanmayproject/Rectangle_108_rnhh5n.png"
-                class="right-image absolute" />
+                class="right-image absolute language-side-images" />
 
         </div>
         <div>
             <!-- <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606041437/tanmayproject/video_r8hcwn.png"> -->
-            <img  src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606277745/tanmayproject/Group_347_aig6yv.png" />
+            <img  src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606277745/tanmayproject/Group_347_aig6yv.png" class="language-images" alt="peaple" />
         </div>
     </div>
     <!-- section ----3  -->
     <div class="section section-3 height-100 text-align-center">
         <div class="flex justify-content-center">
-            <span class="bharat-color our-api" style="margin-top: 13vh;">
+            <span class="bharat-color our-api" >
                 OUR API'S
             </span>
         </div>
@@ -137,7 +149,7 @@
             <div class="card card-img-3">
                 <div class="card-img-box ">
                 <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606330334/tanmayproject/final2_syiuxr.png"
-                    class="card-img-top max-width-200 card-imgs" src="..." alt="Card image cap">                
+                    class="card-img-top max-width-200 card-imgs our-api-img-special-case" src="..." alt="Card image cap">                
                 </div>
                 <div class="card-body">
                     <h3 class="card-title">Machine <br /> Transcription API</h3>
@@ -151,8 +163,8 @@
 
     </div> 
     <!-- mid---section  -->
-    <div class="mid-section flex justify-content-space-between" style="padding-top:33px;padding-bottom: 40px;  ">
-        <div >
+    <div class="mid-section flex justify-content-space-between row" style="padding-top:33px;padding-bottom: 40px;  ">
+        <div class=" col-6 col-sm-6 col-md-6">
             <div class="white-color experience-magic">
                 Experience the magic Journey 
                  <br class="break-at-laptop"/> 
@@ -167,8 +179,8 @@
                 GET EARLY API ACCESS 
             </div>
         </div>
-        <div>
-            <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606287392/tanmayproject/Group_324_athgoc.png" alt="design" />
+        <div class="col-6 col-sm-6 col-md-6 flex mid-section-img" style="justify-content: flex-end;">
+            <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606287392/tanmayproject/Group_324_athgoc.png" alt="design"  style="align-self: flex-start ; margin-top: 10px;" />
         </div>
     </div>
 
@@ -237,9 +249,10 @@
         </div>
     
  -->
-<div class="relative scene-2-heading" style="margin-top: 8%;">
-            <div class="absolute text-align-center inside-autovox" style="z-index: 99;left: 45%; top: 90px;"> INSIDE AUTOVOX</div>
-    <div id="" class="scene2-active" style="">
+<div class="relative scene-2-heading margin-top-change-inside-auto-vox" >
+            <div class="absolute text-align-center inside-autovox" style="z-index: 99;"> INSIDE AUTOVOX</div>
+    <div id="" class="scene2-active" >
+        
        <img id="scene-2-heading" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606319050/tanmayproject/Group_344_ldist6.png" class="automated-pic-show " />
     </div>
     <div  class="" style="top: 0px;">
@@ -247,7 +260,7 @@
     </div>
    
 
-<div class="absolute " style="top: 400px; right: 100px;">
+<div class="absolute inside-autovox-radio-button-div" >
     <div>
         <div class="radio-button-one active-carousel-radio" onclick="scene2reset(0)">
         </div>
@@ -273,11 +286,11 @@
         <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606329226/tanmayproject/Group_326_dzgeqm.png"
             alt="" />
     </div>
-    <div class="flex justify-content-space-between" style="margin-top: 30px;">
-        <div class="looking-for-multilingual-content">
+    <div class="flex justify-content-space-between row" style="margin-top: 30px;">
+        <div class="looking-for-multilingual-content col-12 col-sm-12 col-md-8">
             Looking for multilingual <br /> content play?
         </div>
-        <div class="get-in-touch-looking-for-multilingual text-align-center">
+        <div class=" text-align-center col-12 col-sm-12 col-md-4 get-in-touch-looking-for-multilingual">
             GET IN TOUCH
         </div>
     </div>
@@ -290,14 +303,14 @@
 <!-- section - 7 -->
 
 
-<div class="section-7 height-100">
+<div class="section-7 " style="min-height: 100vh;">
     <div class="text-align-center our-usp">
         OUR USP
     </div>
     <div class="text-align-center data-and-diversity">
         Data & Diversity
     </div>
-    <div class="flex flex-direction">
+    <div class="flex flex-direction" >
             <div class="card-deck card-deck-initialize" style="width: fit-content; align-self: center;">
                 <div class="card">
                     <div class="img-cover color1">
@@ -306,7 +319,7 @@
                     </div>
 
                     <div class="card-body flex-end">
-                        <span class="card-title data-and-diversity">25,000 hours</span>
+                        <span class="card-title data-and-diversity"><b>25,000</b> hours</span>
                         <p class="card-text opacity-6    card-description-text">
                         of speech data over 15 indian
                         regional languages</p>
@@ -318,7 +331,7 @@
                     <img class="card-img-top" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606332002/tanmayproject/bx-network-chart_1_gbnfsn.png" alt="Card image cap">
             </div>
                     <div class="card-body flex-end">
-                        <span class="card-title data-and-diversity">1.5 Million</span>
+                        <span class="card-title data-and-diversity"><b>1.5</b> Million</span>
                         <p class="card-text opacity-6    card-description-text">
                         Parallel Sentence
                         Corpus per
@@ -332,7 +345,7 @@
                     <img class="card-img-top" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606332002/tanmayproject/bx-chip_2_rt2vbi.png" alt="Card image cap">
             </div>
                     <div class="card-body flex-end">
-                        <span class="card-title data-and-diversity">Reduced TCO</span>
+                        <span class="card-title data-and-diversity"><b>Reduced</b> TCO</span>
                         <p class="card-text opacity-6    card-description-text">                        
                         due to silicon strategy in
                         partnership with Nvidia, Synaptics</p>
@@ -340,7 +353,7 @@
                 </div>
             </div>
             <!-- card-deck--2----- -->
-            <div class="card-deck margin-top-20" style="width: fit-content; align-self: center;">
+            <div class="card-deck  margin-top-20 card-deck-2" style="width: fit-content; align-self: center;">
                 <div class="card">
                     <div class="img-cover color4">
 
@@ -360,7 +373,7 @@
                     <img class="card-img-top"
                         src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606332002/tanmayproject/bx-like_1_g48rzv.png"
                         alt="Card image cap">
-                    </div>
+                     </div>
                         <div class="card-body margin-top-20">
                         <p class="card-text card-description-text" style="display: inline;">
                     <span class="bold">    Consortium partners with GOI and IIT-Madras</span> <span class="opacity-6"> for expanding language OS for Bharat footprint</span>
@@ -400,7 +413,7 @@
 
 <!-- section ----4 -------- -->
 
-    <div class="section  section-4 " style="background-color: grey;margin-top: 8vh;">
+    <div class="section  section-4 " id="use-case-div" style="margin-top: 8vh;">
         <div class="row">
             <span class="col-12 use-case" style="padding-bottom:11px;"> USE CASE</span>
         </div>
@@ -427,10 +440,10 @@
                     </span>
                   </div>           
             </div> 
-            <div class="col-12 col-md-6 relative">
-                <img class="absolute" id="background-img-person" style="top:-90px;left:90px ;max-height: 400px;clip: rect(-11px,204px,383px,0px);" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606144152/tanmayproject/blue_man_hfsmqs.png">
-            <img id="background-img" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606140234/tanmayproject/blue_ebpbin.png" />
-                <div class="absolute " style="top: 80px; right: 100px;">
+            <div class="col-12 col-md-6 relative margin-top-change-screen-res" >
+                <img class="absolute use-case-img-animation" id="background-img-person"  src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606144152/tanmayproject/blue_man_hfsmqs.png">
+            <img id="background-img" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606140234/tanmayproject/blue_ebpbin.png" class="use-case-img-background-animation " />
+                <div class="absolute use-case-radio-button-div" >
                     <div>
                          <div class="radio-button active-carousel-radio" onclick="reset(0)">
                          </div>
@@ -448,11 +461,105 @@
         </div>
     </div>
 </div>
+<div class="section-8 height-100">
+    <div class="inside-box-section-8">
+        <div class="contact-us-inside-box">
+            CONTACT US
+        </div>
+        <br />
+        <div class="early-access-inside-box">
+            Get early access to<br/>
+            our metadata API’s
+        </div>
+        <br />
+        <br />
+        <div class="contact-us-box-img-white" >
+            <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/Rectangle_131_qpnlsg.png" />
+        </div>
+    </div>
+    <div style="margin-top: 25px; " class="contact-us-box-img-blue">
+        <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/Rectangle_142_nv24vb.png"  />
+    </div>
+    <div style="margin-top: 25px;" class="contact-us-box-img-green">
+        <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/Rectangle_143_xqg0rs.png" />
+
+    </div>
+    <div style="margin-top: 12px;">
+        <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/Rectangle_120_bu2euk.png" />
+    </div>
+</div>
+
+<div class="section-9">
+    <div class="contact">
+        CONTACTS
+    </div>
+    <br/>
+    <div class="contact-details">
+        <div>
+            mail@autovox.com
+        </div>
+    <br />
+        <div>
+            +91 - 988988988
+        </div>
+    </div>
+    <br/>
+        <br />
+    <div>
+        <div class="follow-us">
+            FOLLOW US
+        </div>
+        <br/>
+        <div>
+            <span class="social-imgs" title="facebook">
+                <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/bxl-facebook_1_hrohrz.png"  alt="facebook"/> 
+            </span>
+            <span class="social-imgs" title="instagram">
+                <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493075/tanmayproject/bxl-instagram-alt_1_rwaelg.png" alt="instagram"/>
+            </span>
+            <span class="social-imgs" title="linkedin">
+                <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493075/tanmayproject/bxl-linkedin-square_1_zm9pmh.png" alt="linkedin"/>
+            </span>
+            <span class="social-imgs" title="twitter">
+                <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493075/tanmayproject/bxl-twitter_1_wzp13e.png" alt="twitter"/>
+            </span>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="flex  justify-content-space-between change-flex-direction " >
+            <div>
+                <div class="office-location"> 
+                    <div>  OFFICE LOCATION</div>
+                    <br />
+                    <div>
+                    <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606494731/tanmayproject/Rectangle_121_f8tpha.png" />
+                        </div>
+                </div>
+            </div>
+            <div class="flex footer-autovox" >
+                    <span class="autovox" style="align-self: flex-end;">
+                        <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606274738/tanmayproject/autovox_ICON_yb1drc.png"
+                            alt="autovox" />
+                        autovox.ai
+                    </span>
+            </div>
+    </div>
+</div>
 
 
                 
     
 </body>
+<div id="mySidenav" class="sidenav ">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="">Our Story</a>
+    <a href="#use-case-div" onclick="closeNav()">Use Case</a>
+    <a href="">GET IN TOUCH</a>
+    <!-- <a href="#">Contact</a> -->
+</div>
+<script src="header.js"> </script>
+<script src="drawer.js"> </script>
 <script src="index.js"></script>
 
    

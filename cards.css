@@ -92,9 +92,9 @@ align-items: center; */
   /* position: */
   /* clip: rect(-11px, 204px, 383px, 0px); */
   width: 100%;
-  object-fit: none;
+  object-fit: contain;
   position: absolute;
-  /* height: 700px; */
+  max-height: 700px;
 }
 
 .section-7 .card img {
@@ -108,6 +108,10 @@ align-items: center; */
   padding: 32px;
   max-width: 310px;
   margin: 25px;
+}
+.section-7 .card-deck {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .section-7 .card-body {
   padding: 0px;
@@ -148,7 +152,7 @@ align-items: center; */
 }
 .section-7 .card .card-description-text {
   /* position: absolute;
-width: 244px;
+width: 244px; 
 height: 116px;
 left: 232px;
 top: 4716px; */
