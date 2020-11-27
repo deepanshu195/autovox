@@ -461,7 +461,7 @@
         </div>
     </div>
 </div>
-<div class="section-8 height-100">
+<div class="section-8  relative" style="min-height: 100vh;">
     <div class="inside-box-section-8">
         <div class="contact-us-inside-box">
             CONTACT US
@@ -486,6 +486,58 @@
     </div>
     <div style="margin-top: 12px;">
         <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/Rectangle_120_bu2euk.png" />
+    </div>
+    <div  class="form-fill">
+        <form id="myForm">
+            <div class="form-group">
+                <label class="form-fill-heading" for="inputName">Your Name </label>
+                <input type="text" class="form-control form-control-lg" id="inputName" maxlength="50" aria-describedby="emailHelp" required>
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+
+            <div class="form-group">
+                <label class="form-fill-heading" for="inputEmail">Your Email </label>
+                <input type="email" class="form-control form-control-lg" id="inputEmail" maxlength="50" aria-describedby="emailHelp" required>
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+                <label class="form-fill-heading" for="inputOrganization">Your Organization</label>
+                <input type="text" class="form-control form-control-lg" id="inputOrganization" required>
+            </div>
+            <div class="form-group">
+                <label class="form-fill-heading" for="inputYourRole">Your Role</label>
+                <input type="text" class="form-control form-control-lg" id="inputYourRole">
+            </div>
+            <div class="form-group">
+            <label class="form-fill-heading" for="inputUseCase">Intended Usecase</label>
+                <small id="emailHelp" class="form-text text-muted">Provide a brief description of the way that you or your organization might want to use the API</small>
+                <textarea class="form-control form-control-lg" id="inputUseCase" rows="3"></textarea>
+            </div>
+            <div >
+            <label class="form-fill-heading" for="inputCategory">Usecase Category</label>
+                <select class="form-control form-control-lg" id="inputCategory">
+                    <option>Default select</option>
+                </select>
+
+            <br />
+            </div>
+            <div >
+                <label class="form-fill-heading" for="inputCountry">Country/Region</label>
+                <select class="form-control form-control-lg" id="inputCountry">
+                    <option>Default select</option>
+                </select>
+                <br />
+            </div>
+            <div class="form-group">
+                <label class="form-fill-heading" for="inputPhone">Your Phone(optional)</label>
+                <input type="tel" class="form-control form-control-lg" id="inputPhone">
+            </div>
+            <div class="flex" style="justify-content: flex-end;">
+
+            <button type="submit" class="btn btn-primary form-fill-submit-button" >Submit</button>
+            </div>
+
+        </form>
     </div>
 </div>
 
@@ -558,6 +610,8 @@
     <a href="">GET IN TOUCH</a>
     <!-- <a href="#">Contact</a> -->
 </div>
+<script src="formSubmit.js"> </script>
+
 <script src="header.js"> </script>
 <script src="drawer.js"> </script>
 <script src="index.js"></script>
