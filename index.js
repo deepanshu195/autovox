@@ -58,16 +58,9 @@ function activeDisableElement(sceneId, sceneText, counter, clickShowId) {
 }
 
 function personImageChange(clickShowId) {
-  console.log(clickShowId);
   let pictureChange = document.getElementById("background-img-person");
   // setTimeout(() => {
   pictureChange.classList.add("black-fadeIn");
-  console.log(
-    (clickShowId !== undefined ? clickShowId : id4 + 1) %
-      backgroundImgPeaple.length,
-    clickShowId,
-    id4
-  );
   pictureChange.setAttribute(
     "src",
     backgroundImgPeaple[
@@ -216,3 +209,9 @@ function scene2reset(clickShowId) {
 }
 
 carasol2();
+
+window.onload = function () {
+  document.getElementById(
+    "section-1"
+  ).style.backgroundImage = `url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606572040/tanmayproject/Bg_gif_pbkt0c.gif")`;
+};

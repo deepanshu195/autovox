@@ -33,10 +33,10 @@ header {
   backdrop-filter: blur(66px); */
 }
 .section-1 {
-  background: rgba(0, 0, 0, 0.12);
-  backdrop-filter: blur(66px);
+  /* background-image: url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606572040/tanmayproject/Bg_gif_pbkt0c.gif"); */
+  background-size: 101%;
+  /* backdrop-filter: blur(66px); */
   /* Note: backdrop-filter has minimal browser support */
-
   /* transform: rotate(90deg); */
 }
 .section-sub-1 {
@@ -222,7 +222,7 @@ text-transform: uppercase; */
 }
 .get-in-touch-1 {
   padding: 13px 40px;
-  height: 44px;
+  height: 50px;
   background: linear-gradient(96.87deg, #6a47ff 2.65%, #bc4fff 100%);
   border-radius: 12px;
 }
@@ -249,10 +249,6 @@ text-transform: uppercase; */
     display: none;
   }
   .section-7 {
-    padding-left: var(--padding-left-right);
-    padding-right: var(--padding-left-right);
-  }
-  .section-4 {
     padding-left: var(--padding-left-right);
     padding-right: var(--padding-left-right);
   }
@@ -503,7 +499,7 @@ text-align: center; */
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 110%;
   /* identical to box height, or 129% */
 
   text-transform: uppercase;
@@ -610,7 +606,7 @@ align-items: center;*/
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 110%;
   color: #11142d;
   margin: 10px 0px;
   max-width: 200px;
@@ -774,4 +770,22 @@ top: 6624px; */
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+}
+
+.section-2 {
+  background-image: url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606571996/tanmayproject/2nd_Section_BG_g1hu1u.png");
+}
+#success-register {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #28a745;
+  display: none;
+}
+#failed-register {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+  display: none;
 }

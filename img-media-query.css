@@ -1,5 +1,6 @@
 :root {
   --black-text-font-size-small: 31px;
+  --padding-left-right: 120px;
 }
 .section-3 .card-deck {
   display: flex;
@@ -53,6 +54,10 @@
   }
   .mid-section {
     margin: 0 var(--padding-left-right);
+  }
+  .section-4 {
+    padding-left: var(--padding-left-right);
+    padding-right: var(--padding-left-right);
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1300px) {

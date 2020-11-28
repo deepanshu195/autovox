@@ -15,9 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-
-
-
         <!-- personal css -->
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="drawer.css">
@@ -37,20 +34,19 @@
         <span class="head-nav">
     Our Story
         </span>
-        <span class="head-nav">
+        <!-- <span class="head-nav">
            <a href="#use-case-div"> Use Case </a>&nbsp;&#9660;
-        </span>
+        </span> -->
 
         <button class="get-in-touch-color get-in-touch-1">GET IN TOUCH </button>
-    
     </div>
     <span style="font-size:30px;cursor:pointer" class="show-till-laptop" onclick="openNav()">&#9776; </span>
 
 </header>
 
-<body id="body">
+<body id="body"  >
     <!-- section-1  -->
-    <div class="section-1 height-94">
+    <div class="section-1 height-94" id="section-1">
         <div class="section section  voice-main-section section-sub-1 height-94" style="width: 100%;" >  
             <div class="text-align-center voice-section">
                 <span class="voice-os">
@@ -419,7 +415,7 @@
         </div>
         <!-- <br /> -->
         <div class="row">
-            <div class=" col-12 col-md-8">
+            <div class=" col-12 col-md-6 col-xl-8">
                 <div class="relative scene-1-heading">
                     <!-- scene---1 -->
                     <div id="scene-1-heading" class="" style="min-height: 100px;">
@@ -440,7 +436,7 @@
                     </span>
                   </div>           
             </div> 
-            <div class="col-12 col-md-4 relative margin-top-change-screen-res" >
+            <div class="col-12 col-md-6 col-xl-4 relative margin-top-change-screen-res" >
                 <img class="absolute use-case-img-animation" id="background-img-person"  src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606144152/tanmayproject/blue_man_hfsmqs.png">
             <img id="background-img" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606140234/tanmayproject/blue_ebpbin.png" class="use-case-img-background-animation " />
                 <div class="absolute use-case-radio-button-div" >
@@ -489,15 +485,21 @@
     </div>
     <div  class="form-fill">
         <form id="myForm">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
             <div class="form-group">
                 <label class="form-fill-heading" for="inputName">Your Name </label>
-                <input type="text" class="form-control form-control-lg" id="inputName" maxlength="50" aria-describedby="emailHelp" required>
+                <input type="text" class="form-control form-control-lg " id="inputName" maxlength="50" aria-describedby="emailHelp" required name="deep">
                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                <!-- <div class="invalid-feedback">
+                    Looks good!
+                </div> -->
             </div>
 
             <div class="form-group">
                 <label class="form-fill-heading" for="inputEmail">Your Email </label>
-                <input type="email" class="form-control form-control-lg" id="inputEmail" maxlength="50" aria-describedby="emailHelp" required>
+                <input type="email" class="form-control form-control-lg " id="inputEmail" maxlength="50" aria-describedby="emailHelp" required>
                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             </div>
             <div class="form-group">
@@ -524,7 +526,36 @@
             <div >
                 <label class="form-fill-heading" for="inputCountry">Country/Region</label>
                 <select class="form-control form-control-lg" id="inputCountry">
-                    <option>Default select</option>
+               
+                    <option value="">Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
                 </select>
                 <br />
             </div>
@@ -535,6 +566,12 @@
             <div class="flex" style="justify-content: flex-end;">
 
             <button type="submit" class="btn btn-primary form-fill-submit-button" >Submit</button>
+            </div>
+            <div id="success-register">
+                Successfully Registered
+            </div>
+            <div id="failed-register">
+                Something went wrong
             </div>
 
         </form>
