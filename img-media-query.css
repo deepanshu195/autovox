@@ -44,6 +44,9 @@
 .contact-us-box-img-green {
   margin-left: 208px;
 }
+.our-api {
+  margin-top: 13vh;
+}
 
 @media screen and (min-width: 1300px) {
 }
@@ -192,9 +195,7 @@
   .section-3 .card-deck .card {
     max-width: 384px;
   }
-  .our-api {
-    margin-top: 13vh;
-  }
+
   .card-img-box {
     height: 200px;
   }
@@ -346,6 +347,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+  }
+  .show-in-low {
+    display: inline;
+  }
+  .hide-in-low {
+    display: none;
   }
 }
 
