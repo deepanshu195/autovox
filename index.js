@@ -1,16 +1,16 @@
 // let sceneHeadingId = ["scene-1-heading", "scene-2-heading", "scene-3-heading"];
 let sceneHeadingId = ["scene-1-heading", "scene-1-heading-absolute"];
 let sceneHeadingText = [
-  "Mobile Steno for Legal fraternity ",
-  "Video transcription for Ed-Tech content",
-  "Driving the telemedicine adoption in Bharat",
+  "Mobile Steno <br/> for Legal fraternity ",
+  "Video transcription for<br/> Ed-Tech content",
+  "Driving the telemedicine<br/> adoption in Bharat",
 ];
 
 let sceneDescriptionText = [
-  "Lawyers have immense transcription requirement running in multiple pages. AutoVox Mobile Steno understand the legal language and can increase productivity and reduce cost for the legal fraternity...more",
+  " Lawyers have immense transcription <br/> need on a daily basis. Most of them hire <br/> a stenographers salaried upto 40,000&#x20B9; a <br/> month. To add to this, there is a need for <br/> translation as petitions across courts.",
 
-  "Millions of hours of quality content are getting created in multiple subjects. But are they reaching out to learners beyond a certain geography? Are the creators burdened with the task of creating same content in multiple language which is a time consuming and expensive task?...more",
-  "In a country with a low doctor-patient ratio, language should not come in between reaching out to good doctors.",
+  "Millions of hours of quality content are <br/>getting created in multiple subjects. But are <br/>they reaching out to learners beyond a <br/>certain geography? Are the creators<br/> burdened with the task of creating same<br/> content in multiple language which is a time <br/>consuming and expensive task?...more",
+  "In a country with a low doctor-patient ratio,<br/> language should not come in between<br/> reaching out to good doctors.",
 ];
 let sceneDescriptionId = [
   "scene-1-description",
@@ -213,5 +213,5 @@ carasol2();
 window.onload = function () {
   document.getElementById(
     "section-1"
-  ).style.backgroundImage = `url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606572040/tanmayproject/Bg_gif_pbkt0c.gif")`;
+  ).style.backgroundImage = `url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606678159/tanmayproject/gif_gjfoxm.gif")`;
 };

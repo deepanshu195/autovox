@@ -160,7 +160,7 @@
     </div> 
     <!-- mid---section  -->
     <div class="mid-section flex justify-content-space-between row" style="padding-top:33px;padding-bottom: 40px;  ">
-        <div class=" col-6 col-sm-6 col-md-6">
+        <div class="  col-md-6">
             <div class="white-color experience-magic">
                 Experience the magic Journey 
                  <br class="break-at-laptop"/> 
@@ -175,7 +175,7 @@
                 GET EARLY API ACCESS 
             </div>
         </div>
-        <div class="col-6 col-sm-6 col-md-6 flex mid-section-img" style="justify-content: flex-end;">
+        <div class=" col-md-6 flex mid-section-img" style="justify-content: flex-end;">
             <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606287392/tanmayproject/Group_324_athgoc.png" alt="design"  style="align-self: flex-start ; margin-top: 10px;" />
         </div>
     </div>
@@ -409,20 +409,20 @@
 
 <!-- section ----4 -------- -->
 
-    <div class="section  section-4 " id="use-case-div" style="margin-top: 8vh;">
-        <div class="row">
-            <span class="col-12 use-case" style="padding-bottom:11px;"> USE CASE</span>
+    <div class="section relative section-4 " id="use-case-div" style="margin-top: 8vh;">
+        <div class="use-case-span-div" style="margin-bottom: 10px;">
+            <span class=" use-case" style="padding-bottom:11px;"> USE CASE</span>
         </div>
         <!-- <br /> -->
         <div class="row">
-            <div class=" col-12 col-md-6 col-xl-8">
+            <div class=" col-12 col-md-8 col-xl-8" style="padding: 0px;">
                 <div class="relative scene-1-heading">
                     <!-- scene---1 -->
-                    <div id="scene-1-heading" class="" style="min-height: 100px;">
-                        Mobile Steno
+                    <div id="scene-1-heading" class="scene-1-heading" style="min-height: 100px;">
+                        Mobile Steno <br/>
                         for Legal fraternity
                 </div>
-                    <div id="scene-1-heading-absolute" class="absolute disable" style="top: 0px;">
+                    <div id="scene-1-heading-absolute" class="absolute disable scene-1-heading-absolute" style="top: 0px;">
                     </div>
                     
                 </div>
@@ -436,29 +436,30 @@
                     </span>
                   </div>           
             </div> 
-            <div class="col-12 col-md-6 col-xl-4 relative margin-top-change-screen-res" >
+            <div class="col-md-4 col-xl-4 relative margin-top-change-screen-res secton-4-background-person-img" >
                 <img class="absolute use-case-img-animation" id="background-img-person"  src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606144152/tanmayproject/blue_man_hfsmqs.png">
             <img id="background-img" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606140234/tanmayproject/blue_ebpbin.png" class="use-case-img-background-animation " />
-                <div class="absolute use-case-radio-button-div" >
-                    <div>
-                         <div class="radio-button active-carousel-radio" onclick="reset(0)">
-                         </div>
-                    </div>  
-
-                    <div>
-                        <div class="radio-button disactive-carousel-radio" onclick="reset(1)">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="radio-button disactive-carousel-radio" onclick="reset(2)">                       
-                    </div>
-                </div>
+            
+        </div>
+    </div>
+    <div class="use-case-radio-button-div">
+        <div>
+            <div class="radio-button active-carousel-radio" onclick="reset(0)">
+            </div>
+        </div>
+    
+        <div>
+            <div class="radio-button disactive-carousel-radio" onclick="reset(1)">
+            </div>
+        </div>
+        <div>
+            <div class="radio-button disactive-carousel-radio" onclick="reset(2)">
             </div>
         </div>
     </div>
 </div>
 <div class="section-8  relative" style="min-height: 100vh;">
-    <div class="inside-box-section-8">
+    <div class="inside-box-section-8 contact-us-inside-box-div">
         <div class="contact-us-inside-box">
             CONTACT US
         </div>
@@ -469,10 +470,13 @@
         </div>
         <br />
         <br />
-        <div class="contact-us-box-img-white" >
+     </div>
+     <div class="inside-box-section-8">
+
+        <div class="contact-us-box-img-white">
             <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/Rectangle_131_qpnlsg.png" />
         </div>
-    </div>
+     </div>
     <div style="margin-top: 25px; " class="contact-us-box-img-blue">
         <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606493074/tanmayproject/Rectangle_142_nv24vb.png"  />
     </div>
@@ -622,8 +626,8 @@
                     <div>  OFFICE LOCATION</div>
                     <br />
                     <div>
-                    <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606494731/tanmayproject/Rectangle_121_f8tpha.png" />
-                        </div>
+                        <div id="map" style="width: 300px;"></div>
+                </div>
                 </div>
             </div>
             <div class="flex footer-autovox" >
@@ -652,7 +656,11 @@
 <script src="header.js"> </script>
 <script src="drawer.js"> </script>
 <script src="index.js"></script>
+<script src="map.js"></script>
 
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF6efzGFvwAJj_eEX0gbusSmc3LyN11ZQ&callback=initMap">
+    </script>
    
     </script>
 </html>

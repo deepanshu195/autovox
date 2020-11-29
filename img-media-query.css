@@ -29,8 +29,8 @@
 }
 .use-case-radio-button-div {
   /* right: 15vw; */
-  left: 400px;
-  top: 100px;
+  right: 10%;
+  top: 22%;
 }
 .margin-top-change-inside-auto-vox {
   margin-top: 8%;
@@ -56,8 +56,11 @@
     margin: 0 var(--padding-left-right);
   }
   .section-4 {
-    padding-left: var(--padding-left-right);
-    padding-right: var(--padding-left-right);
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+  .use-case-radio-button-div {
+    position: absolute;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -74,15 +77,24 @@
     width: 400px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .use-case-radio-button-div {
+    margin-top: 20px;
+    transform: rotate(-90deg);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .language-images {
-    width: 500px;
+    width: 680px;
   }
   .language-side-images {
     width: 100px;
   }
   .left-image {
-    bottom: -270px;
+    bottom: -360px;
   }
   .right-image {
     bottom: -80px;
@@ -94,8 +106,12 @@
   .section-7 .card .card-title {
     font-size: 25px;
   }
+  .section-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
 }
 @media screen and (max-width: 992px) and (min-width: 767px) {
   .inside-autovox-radio-button-div {
@@ -129,10 +145,10 @@
     max-height: 200px;
     clip: rect(-11px, 204px, 383px, 0px);
   }
-  .use-case-radio-button-div {
+  /* .use-case-radio-button-div {
     left: 300px;
     top: 100px;
-  }
+  } */
   .use-case-img-animation {
     top: -57px;
     left: 75px;
@@ -185,14 +201,15 @@
 }
 @media screen and (max-width: 767px) {
   .language-images {
-    width: 300px;
+    width: 65%;
+    object-fit: contain;
   }
 
   .language-side-images {
     width: 50px;
   }
   .left-image {
-    bottom: -115px;
+    bottom: -255px;
   }
   .right-image {
     bottom: -50px;
@@ -205,11 +222,12 @@
     flex-direction: column;
   }
   .section-3 .card-deck .card {
-    min-width: 284px;
-    max-width: 384px;
+    min-width: 340px;
+    max-width: 340px;
     align-self: center;
     /* margin-top: 23px;
     cursor: pointer; */
+    padding: 20px;
   }
   .section-3 .card-deck .card .card-imgs {
     width: 150px;
@@ -220,8 +238,9 @@
   }
   /* same as above only 1 image coming as big */
   .our-api-img-special-case {
-    width: 120px !important;
+    width: 50px !important;
     height: 80px !important;
+    margin-bottom: 5px;
   }
 
   .mid-section {
@@ -254,6 +273,11 @@
   .inside-box-section-8 {
     margin-left: 112px;
   }
+  .contact-us-inside-box-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
   .contact-us-box-img-blue {
     margin-left: 62px;
   }
@@ -267,6 +291,61 @@
     position: initial;
     left: 10px;
     margin: 10px auto;
+  }
+  .use-case-span-div {
+    width: fit-content;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scene-1-heading {
+    /* width: fit-content; */
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+  }
+
+  .scene-1-heading-absolute {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    min-width: 367px;
+    /* width: fit-content; */
+    text-align: center;
+  }
+  .scene-1-description {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+  }
+  .secton-4-background-person-img {
+    /* width: 100%; */
+    text-align: center;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-6 {
+    text-align: center;
+  }
+  .get-in-touch-looking-for-multilingual {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .early-api-access {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mid-section {
+    text-align: center;
+  }
+  .mid-section-img {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
 }
 
@@ -292,20 +371,20 @@
     left: -100px;
   }
   .section-4 {
-    padding-left: 10%;
+    /* padding-left: 10%; */
   }
 }
 
 @media screen and (max-width: 576px) {
   .language-images {
-    width: 190px;
+    width: 400px;
   }
 
   .language-side-images {
     width: 35px;
   }
   .left-image {
-    bottom: -75px;
+    bottom: -200px;
   }
   .right-image {
     bottom: -35px;
@@ -361,9 +440,6 @@
   .footer-autovox {
     margin-top: 30px;
   }
-  .form-fill {
-    padding: 15px;
-  }
 }
 @media screen and (min-width: 576px) {
 }
@@ -390,12 +466,18 @@
   .use-case-img-background-animation {
     width: 200px;
   }
-  .use-case-radio-button-div {
+  /* .use-case-radio-button-div {
     left: 300px;
     top: 100px;
-  }
+  } */
   .margin-top-change-inside-auto-vox {
     margin-top: 55%;
+  }
+  .language-images {
+    width: 300px;
+  }
+  .left-image {
+    bottom: -150px;
   }
 }
 
@@ -406,7 +488,7 @@
 }
 
 @media screen and (max-width: 334px) {
-  .use-case-radio-button-div {
+  /* .use-case-radio-button-div {
     left: 240px;
-  }
+  } */
 }

@@ -16,6 +16,12 @@ body {
   padding: 0px;
   margin: 0px;
 }
+#map {
+  height: 152px;
+  /* The height is 400 pixels */
+  width: 277px;
+  /* The width is the width of the web page */
+}
 b {
   font-weight: bold;
 }
@@ -232,6 +238,16 @@ text-transform: uppercase; */
   background: var(--blue);
   border-radius: 12px;
 }
+.experience-magic,
+.one-langauge {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 120%;
+  /* display: flex;
+    align-items: center; */
+}
 
 @media screen and (min-width: 992px) {
   header {
@@ -262,16 +278,7 @@ text-transform: uppercase; */
   .break-at-laptop {
     display: inline;
   }
-  .experience-magic,
-  .one-langauge {
-    font-family: Proxima Nova;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-  }
+
   .section-9 {
     padding-left: var(--padding-left-right);
     padding-right: var(--padding-left-right);
@@ -618,8 +625,8 @@ align-items: center;*/
   font-weight: var(--black-text-font-weight);
   font-size: var(--black-text-font-size);
   line-height: 110%;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   color: #ffffff;
 }
 .section-7 {
