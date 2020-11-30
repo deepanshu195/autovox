@@ -86,15 +86,24 @@ align-items: center; */
 }
 
 .personalized-card {
-  /* padding: 0px 25px; */
+  padding: 25px;
+  max-width: 375px !important;
+  width: 375px !important;
 }
+.scene-2-description .card-deck {
+  /* width: fit-content;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 70px; */
+}
+
 .automated-pic-show {
   /* position: */
   /* clip: rect(-11px, 204px, 383px, 0px); */
   width: 100%;
   object-fit: contain;
-  position: absolute;
-  max-height: 700px;
+  /* position: absolute; */
+  max-height: 770px;
 }
 
 .section-7 .card img {

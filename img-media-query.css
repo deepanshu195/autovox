@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 .inside-autovox {
-  top: 70px;
+  top: 5vw;
 }
 .section-4 {
   overflow: hidden;
@@ -47,6 +47,12 @@
 .our-api {
   margin-top: 13vh;
 }
+.header {
+  padding: 30px 120px;
+  /* background: #555; */
+  /* color: #f1f1f1; */
+  z-index: 1;
+}
 
 @media screen and (min-width: 1300px) {
 }
@@ -64,6 +70,9 @@
   }
   .use-case-radio-button-div {
     position: absolute;
+  }
+  .graph-img img {
+    max-width: 300px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -87,6 +96,33 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .personalized-card {
+    padding: 25px;
+    max-width: 275px !important;
+    width: 275px !important;
+  }
+  .scene-2-description .card-deck {
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 70px;
+  }
+  .high-quility-speech-info-div {
+    right: -100px;
+    top: -65px;
+  }
+  .arrow-img {
+    top: 128px;
+    left: 240px;
+    z-index: 1111;
+  }
+  .graph-img img {
+    width: 100%;
+  }
+  .graph-img {
+    top: 22px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1200px) {
@@ -115,17 +151,57 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .high-quility-speech-info-div {
+    right: 0px;
+    top: -65px;
+    /* position: absolute; */
+  }
+  .header {
+    padding: 30px 20px;
+    /* background: #555; */
+    /* color: #f1f1f1; */
+    z-index: 1;
+  }
+  .use-case-radio-button-div {
+    margin-top: 20px;
+    transform: rotate(-90deg);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .automated-pic-show {
+    max-height: 770px;
+    /* height: 650px; */
+    transform: scale(1.1);
+  }
+  .inside-autovox-radio-button-div {
+    margin-top: -60px;
+    transform: rotate(-90deg);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+@media screen and (min-width: 992px) {
+  .high-quility-speech-info-div {
+    right: -100px;
+    top: -65px;
+    /* position: absolute; */
+  }
+  .inside-autovox-radio-button-div {
+    position: absolute;
+  }
+}
+
 @media screen and (max-width: 992px) and (min-width: 767px) {
   .inside-autovox-radio-button-div {
     top: 280px;
-  }
-  .automated-pic-show {
-    width: 110%;
-  }
-  .inside-autovox-radio-button-div {
     right: 10vw;
   }
+  .automated-pic-show {
+    width: 105%;
+  }
+
   .section-7 .card {
     height: 300px;
     /* padding: 32px;
@@ -166,7 +242,7 @@
     margin-top: 20%;
   }
   .inside-autovox {
-    left: 35%;
+    /* left: 35%; */
   }
   .automated-pic-show {
     left: -100px;
@@ -255,11 +331,13 @@
     right: 10vw;
   }
   .automated-pic-show {
-    width: 120%;
+    width: 105%;
     left: -115px;
+    transform: scale(1.2);
+    top: 0px;
   }
   .inside-autovox {
-    left: 32%;
+    /* left: 32%; */
   }
   .section-6 {
     padding: 20px 20px;
@@ -371,8 +449,8 @@
     margin-top: 40%;
   }
   .inside-autovox {
-    left: 35%;
-    top: 55px;
+    left: 41%;
+    /* top: 55px; */
   }
   .automated-pic-show {
     left: -100px;
@@ -420,12 +498,13 @@
   }
 
   .automated-pic-show {
-    width: 130%;
+    /* width: 100%; */
     left: -105px;
+    transform: scale(1.2);
   }
   .inside-autovox {
-    left: 32%;
-    top: 20px;
+    left: 41%;
+    top: 0px;
   }
   .card-deck-2 {
     margin-top: -10px;
@@ -455,14 +534,14 @@
 }
 
 @media screen and (max-width: 460px) {
-  .inside-autovox {
+  /* .inside-autovox {
     left: 28%;
     top: 20px;
-  }
-  .automated-pic-show {
+  } */
+  /* .automated-pic-show {
     width: 140%;
     left: -95px;
-  }
+  } */
 
   .use-case-img-animation {
     top: -60px;
