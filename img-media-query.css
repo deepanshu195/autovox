@@ -157,7 +157,7 @@
     /* position: absolute; */
   }
   .header {
-    padding: 30px 20px;
+    padding: 70px 20px;
     /* background: #555; */
     /* color: #f1f1f1; */
     z-index: 1;
@@ -503,8 +503,14 @@
     transform: scale(1.2);
   }
   .inside-autovox {
-    left: 41%;
+    /* left: 41%; */
     top: 0px;
+    /* left: 31%; */
+    margin-left: auto;
+    top: 0px;
+    margin-right: auto;
+    left: 20px;
+    right: 0px;
   }
   .card-deck-2 {
     margin-top: -10px;
