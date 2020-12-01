@@ -35,7 +35,7 @@ let id4 = 0;
 let id5 = 0;
 let interval;
 let toggleId = 0;
-let timeout = 113000;
+let timeout = 4000;
 
 function activeDisableElement(sceneId, sceneText, counter, clickShowId) {
   let elementToDisable = document.getElementById(
