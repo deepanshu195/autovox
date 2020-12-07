@@ -7,14 +7,18 @@ let sceneHeadingText = [
 ];
 
 let sceneDescriptionText = [
-  " Lawyers have immense transcription <br/> need on a daily basis. Most of them hire <br/> a stenographers salaried upto 40,000&#x20B9; a <br/> month. To add to this, there is a need for <br/> translation as petitions across courts.",
+  " Lawyers have immense transcription  <br class='break-at-laptop' /> need on a daily basis. Most of them hire  <br class='break-at-laptop' /> a stenographers salaried upto 40,000&#x20B9; a  <br class='break-at-laptop' /> month. To add to this, there is a need for  <br class='break-at-laptop' /> translation as petitions across courts.",
 
-  "Millions of hours of quality content are <br/>getting created in multiple subjects. But are <br/>they reaching out to learners beyond a <br/>certain geography? Are the creators<br/> burdened with the task of creating same<br/> content in multiple language which is a time <br/>consuming and expensive task?...more",
-  "In a country with a low doctor-patient ratio,<br/> language should not come in between<br/> reaching out to good doctors.",
+  "Millions of hours of quality content are  <br class='break-at-laptop' />getting created in multiple subjects. But are  <br class='break-at-laptop' />they reaching out to learners beyond a  <br class='break-at-laptop' />certain geography? Are the creators <br class='break-at-laptop' /> burdened with the task of creating same <br class='break-at-laptop' /> content in multiple language which is a time  <br class='break-at-laptop' />consuming and expensive task?...more",
+  "In a country with a low doctor-patient ratio, <br class='break-at-laptop' /> language should not come in between <br class='break-at-laptop' /> reaching out to good doctors.",
 ];
 let sceneDescriptionId = [
   "scene-1-description",
   "scene-1-description-absolute",
+];
+let sceneDescriptionMobileId = [
+  "scene-1-description-mobile",
+  "scene-1-description-absolute-mobile",
 ];
 
 let backgroundImg = [
@@ -55,6 +59,16 @@ function activeDisableElement(sceneId, sceneText, counter, clickShowId) {
     elementToDisable.innerHTML = "";
   }, 500);
   toggleId++;
+
+  let mobH =
+    document.getElementById("scene-1-description-mobile").clientHeight ||
+    document.getElementById("scene-1-description-absolute-mobile").clientHeight;
+  console.log(
+    document.getElementById("scene-1-description-mobile").clientHeight,
+    document.getElementById("scene-1-description-absolute-mobile").clientHeight
+  );
+  document.getElementById("for-mobile-change-scene-1").style.minHeight =
+    mobH + "px";
 }
 
 function personImageChange(clickShowId) {
@@ -99,6 +113,8 @@ function carasol1() {
     id++;
     // ----------------------------------------------------------
     activeDisableElement(sceneDescriptionId, sceneDescriptionText, id2);
+    // for mobile
+    activeDisableElement(sceneDescriptionMobileId, sceneDescriptionText, id2);
     id2++;
     //-----------------------------------------------------------
     document
@@ -117,6 +133,14 @@ function reset(idcount) {
   clearInterval(interval);
   activeDisableElement(sceneHeadingId, sceneHeadingText, id, idcount);
   activeDisableElement(sceneDescriptionId, sceneDescriptionText, id2, idcount);
+  // for mobile
+  activeDisableElement(
+    sceneDescriptionMobileId,
+    sceneDescriptionText,
+    id2,
+    idcount
+  );
+
   document
     .getElementById("background-img")
     .setAttribute("src", backgroundImg[idcount % backgroundImg.length]);

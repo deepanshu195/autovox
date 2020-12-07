@@ -30,11 +30,11 @@ function handleForm(event) {
       value: "",
       apiKey: "IntendedUseCase",
     },
-    {
-      key: "inputCategory",
-      value: "",
-      apiKey: "Category",
-    },
+    // {
+    //   key: "inputCategory",
+    //   value: "",
+    //   apiKey: "Category",
+    // },
     {
       key: "inputCountry",
       value: "",

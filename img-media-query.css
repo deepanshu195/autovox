@@ -53,6 +53,12 @@
   /* color: #f1f1f1; */
   z-index: 1;
 }
+.show-in-low {
+  display: none;
+}
+.show-in-low-block {
+  display: none;
+}
 
 @media screen and (min-width: 1300px) {
 }
@@ -322,6 +328,8 @@
 
   .mid-section {
     margin-top: 15vh;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .mid-section-img img {
     width: 200px;
@@ -340,7 +348,7 @@
     /* left: 32%; */
   }
   .section-6 {
-    padding: 20px 20px;
+    padding: 30px 30px;
   }
   .margin-top-change-screen-res {
     margin-top: 100px;
@@ -374,29 +382,29 @@
   .use-case-span-div {
     width: fit-content;
     /* text-align: center; */
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   .scene-1-heading {
     /* width: fit-content; */
-    margin-left: auto;
+    /* margin-left: auto;
     text-align: center;
-    margin-right: auto;
+    margin-right: auto; */
   }
 
   .scene-1-heading-absolute {
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* left: 0;
+    right: 0; */
     min-width: 367px;
     /* width: fit-content; */
-    text-align: center;
+    /* text-align: center; */
   }
   .scene-1-description {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: center; */
     width: fit-content;
   }
   .secton-4-background-person-img {
@@ -406,20 +414,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .section-6 {
-    text-align: center;
-  }
-  .get-in-touch-looking-for-multilingual {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .early-api-access {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .mid-section {
-    text-align: center;
-  }
+
   .mid-section-img {
     width: fit-content;
     margin-left: auto;
@@ -429,8 +424,24 @@
   .show-in-low {
     display: inline;
   }
+  .show-in-low-block {
+    display: block;
+  }
   .hide-in-low {
     display: none;
+  }
+  .mid-section,
+  .section-6,
+  .section-4 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .looking-for-multilingual-content {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .section-6 .row {
+    margin-left: 0px;
   }
 }
 
@@ -487,8 +498,10 @@
   }
   .mid-section {
     margin-top: 13vh;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .early-api-access {
     min-width: 50vw;
@@ -532,8 +545,41 @@
   .footer-autovox {
     margin-top: 30px;
   }
+  .early-api-access {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .form-fill {
+    background: none;
+    color: white;
+  }
+  .form-fill-submit-button {
+    background: white;
+    color: black;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #emailHelp {
+    opacity: 0.6;
+    color: white !important;
+  }
 }
 @media screen and (min-width: 576px) {
+  .form-fill {
+    background: #ffffff;
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
+  }
+  .form-fill-submit-button {
+    background: linear-gradient(
+      96.87deg,
+      #6a47ff 2.65%,
+      #8d4aff 53.17%,
+      #bc4fff 100%
+    );
+  }
 }
 .height-100 {
   height: 100vh;
@@ -549,6 +595,9 @@
     left: -95px;
   } */
 
+  .contact-us-box-img-white {
+    display: none;
+  }
   .use-case-img-animation {
     top: -60px;
     left: 74px;

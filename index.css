@@ -761,8 +761,6 @@ header a:hover {
   text-decoration: none;
 }
 .form-fill {
-  background: #ffffff;
-  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
   border-radius: 36px;
   max-width: 550px;
   padding: 40px;
@@ -783,12 +781,6 @@ top: 6624px; */
 
   /* Grad */
 
-  background: linear-gradient(
-    96.87deg,
-    #6a47ff 2.65%,
-    #8d4aff 53.17%,
-    #bc4fff 100%
-  );
   border-radius: 12px;
   /* float: right; */
   /* clear: both; */
