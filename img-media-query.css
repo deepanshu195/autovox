@@ -13,8 +13,8 @@
   cursor: pointer;
 }
 .inside-autovox-radio-button-div {
-  top: 400px;
-  right: 14vw;
+  top: 300px;
+  right: 10vw;
 }
 .section-5 {
   overflow: hidden;
@@ -58,6 +58,24 @@
 }
 .show-in-low-block {
   display: none;
+}
+.video-transcription-for-your {
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divine-sound-info-div {
+  top: -85px;
+  right: -100px;
+}
+.transcription-11-img {
+  position: relative;
+  top: 10px;
+}
+.divine-sound-info-div img {
+  position: relative;
+  top: 10px;
 }
 
 @media screen and (min-width: 1300px) {
@@ -110,13 +128,13 @@
     width: 275px !important;
   }
   .scene-2-description .card-deck {
-    width: fit-content;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 70px;
+    /* width: fit-content; */
+    /* margin-left: auto !important;
+    margin-right: auto !important; */
+    /* margin-top: 70px; */
   }
   .high-quility-speech-info-div {
-    right: -100px;
+    right: 0px;
     top: -65px;
   }
   .arrow-img {
@@ -190,8 +208,8 @@
 }
 @media screen and (min-width: 992px) {
   .high-quility-speech-info-div {
-    right: -100px;
-    top: -65px;
+    right: -125px;
+    top: -70px;
     /* position: absolute; */
   }
   .inside-autovox-radio-button-div {
@@ -442,6 +460,16 @@
   }
   .section-6 .row {
     margin-left: 0px;
+  }
+  .high-quility-speech-info-div {
+    bottom: -35px;
+    top: auto;
+    left: 0px;
+    right: auto;
+  }
+  .video-transcription-for-your {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 

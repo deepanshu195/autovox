@@ -39,7 +39,7 @@ let id4 = 0;
 let id5 = 0;
 let interval;
 let toggleId = 0;
-let timeout = 4000;
+let timeout = 114000;
 
 function activeDisableElement(sceneId, sceneText, counter, clickShowId) {
   let elementToDisable = document.getElementById(
@@ -63,10 +63,6 @@ function activeDisableElement(sceneId, sceneText, counter, clickShowId) {
   let mobH =
     document.getElementById("scene-1-description-mobile").clientHeight ||
     document.getElementById("scene-1-description-absolute-mobile").clientHeight;
-  console.log(
-    document.getElementById("scene-1-description-mobile").clientHeight,
-    document.getElementById("scene-1-description-absolute-mobile").clientHeight
-  );
   document.getElementById("for-mobile-change-scene-1").style.minHeight =
     mobH + "px";
 }
@@ -155,6 +151,18 @@ function reset(idcount) {
 }
 
 // --------------------------------------------------- second carosoul-----------------------
+
+let secondCarosoulHtml = [
+  '<div class="relative scene-2-heading-div" style="margin-bottom: 80px;"> <div id="" class="scene-2-heading" style="min-height: 100px;"> High Quality Speech <br/>Processing </div> <div id="" class="absolute disable" style="top: 0px;"> </div> </div> <div class="relative scene-2-description"> <div class="card-deck relative"> <div class="card personalized-card"> <div class="inside-autovox-card-head-text"> <span class="bold "> Source File: </span> <br/> <span class=""> </span> English </div> <div class=" relative graph-img" style="left: -10px;"> <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606302866/tanmayproject/Rectangle_33_db3fqn.png" alt="wave"> </div> <div class="absolute arrow-img"> <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606302902/tanmayproject/Group_319_xda3up.png" alt="arrow"> </div> </div> <div class="card personalized-card relative"> <div class="inside-autovox-card-head-text"> <span class="bold "> Output: </span> <br /> <span class=""> </span> More than 11 indian languages </div> <div class=""> <div class="card-video-number"> 00:00 </div> <div class="zero-row1"> </div> <div class="zero-row2 "></div> <div class="card-video-number">00:06</div> <div class="six-row1 "></div> <div class="six-row2 "></div> <div class="card-video-number">00:12</div> <div class="twelve-row1 "></div> <div class="twelve-row2 "></div> <div class="card-video-number">00:20</div> <div class="twenty-row1 "></div> <div class="twenty-row2 "></div> <div class="card-video-number" style="opacity: 0.5;">00:28</div> </div> <div class="absolute high-quility-speech-info-div"> <span class="bold"> Hindi, Kannada, Tamil,<br /> Telugu, Malayalam </span>and<br /> many more <img style="position: absolute; bottom: -20px;" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607356174/tanmayproject/Vector_3_bcaypt.svg" /> </div> </div> </div> </div>',
+  '<div> <div class="relative scene-2-heading-div"> <div id="" class="scene-2-heading" style="min-height: 100px; margin-bottom: 80px;"> Video transcription for <br /> your favorite content </div> <div id="" class="absolute disable" style="top: 0px;"> </div> </div> <div class="video-transcription-for-your relative flex"> <div> <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607414387/tanmayproject/asset_lady_wxkfol.svg" /> </div> <div class="" style="padding: 20px;"> <div> Transcription in more <br /> than <span class="bold"> 11 regional indian <br />languages</span> <img class="transcription-11-img" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607356115/tanmayproject/Vector_j7dmze.svg" /> </div> <div class=""> <div class="pic-2-card-video-number"> 00:00 </div> <div class="pic-2-zero-row1"> </div> <div class="pic-2-zero-row2 "></div> <div class="pic-2-card-video-number">00:06</div> <div class="pic-2-six-row1 "></div> <div class="pic-2-six-row2 "></div> <div class="pic-2-card-video-number">00:12</div> <div class="pic-2-twelve-row1 "></div> <div class="pic-2-twelve-row2 "></div> <div class="pic-2-card-video-number">00:18</div> <div class="pic-2-eighteen-row1 "></div> <div class="pic-2-eighteen-row2 "></div> </div> </div> </div> </div>',
+  ' <div> <div class="relative scene-2-heading-div" style="margin-bottom: 80px;"> <div id="" class="scene-2-heading" style="min-height: 100px;"> Machine translation to <br class="break-at-laptop" /> indian regional languages </div> <div id="" class="absolute disable" style="top: 0px;"> </div> </div> <div class="hindi-text hindi-div-box"> <div style="padding: 40px;" class="relative"> Divine sound is the cause of all manifestation. The knower of the mystery of <br class="break-at-laptop" /> sound knows the mystery of the whole universe <div class="absolute divine-sound-info-div"> <span class="bold"> Hindi, Kannada, Tamil,<br /> Telugu, Malayalam </span>and<br /> many more <img class="" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607356174/tanmayproject/Vector_3_bcaypt.svg" /> </div> </div> <div class="border-line relative"> <img class="absolute " src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607414383/tanmayproject/ic_arrow_jclotz.svg" /> </div> <div style="padding: 40px;"> दिव्य ध्वनि सभी प्रकट होने का कारण है। ध्वनि के रहस्य का ज्ञाता पूरे <br class="break-at-laptop" />ब्रह्मांड के रहस्य को जानता है </div> <div> </div> </div> </div>',
+];
+
+let secondCarosoulHtmlMobile = [
+  '<div style="min-height:800px"> <div class="relative scene-2-heading-div" style="margin-bottom: 30px;"> <div id="" class="scene-2-heading" style="min-height: 100px;"> High Quality Speech <br/>Processing </div> <div id="" class="absolute disable" style="top: 0px;"> </div> </div> <div class="relative scene-2-description"> <div class="card-deck relative" style="justify-content: flex-start;"> <div class="card personalized-card" style="height: fit-content;"> <div class="inside-autovox-card-head-text"> <span class="bold "> Source File: </span> <br/> <span class=""> </span> English </div> <div class=" relative graph-img" style="left: -10px;"> <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1606302866/tanmayproject/Rectangle_33_db3fqn.png" alt="wave"> </div> <div class="absolute high-quility-speech-info-div"> <img style="position: absolute; bottom: -20px;" src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607429557/tanmayproject/arrow-right_1_wecs8o.svg" /> </div> </div> </div> <div class="personalized-card relative"> <div class="inside-autovox-card-head-text" style="margin-top: 50px;"> <span class="bold "> Output: </span> <br /> <span class=""> </span> More than 11 indian languages </div> <div class=""> <div class="card-video-number"> 00:00 </div> <div class="zero-row1"> </div> <div class="zero-row2 "> </div> <div class="card-video-number">00:06 </div> <div class="six-row1 "> </div> <div class="six-row2 "> </div> <div class="card-video-number">00:12 </div> <div class="twelve-row1 "> </div> <div class="twelve-row2 "> </div> </div> </div> </div></div>',
+  '<div style="padding: 20px; min-height:800px"> <div class="relative scene-2-heading-div"> <div id="" class="scene-2-heading" style="min-height: 100px; margin-bottom: 80px;"> Video transcription for <br /> your favorite content </div> <div id="" class="absolute disable" style="top: 0px;"> </div> </div> <div class="video-transcription-for-your relative flex"> <div> <img src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607414387/tanmayproject/asset_lady_wxkfol.svg" /> </div> </div> <div class="" style="margin-top: 40px;"> <div> Transcription in more <br /> than <span class="bold"> 11 regional indian <br />languages</span> </div> <div class=""> <div class="pic-2-card-video-number"> 00:00 </div> <div class="pic-2-zero-row1"> </div> <div class="pic-2-zero-row2 "></div> <div class="pic-2-card-video-number">00:06</div> <div class="pic-2-six-row1 "></div> <div class="pic-2-six-row2 "></div> <div class="pic-2-card-video-number">00:12</div> <div class="pic-2-twelve-row1 "></div> <div class="pic-2-twelve-row2 "></div> </div> </div> </div>',
+  '<div style="margin: 20px;min-height:800px"> <div class="relative scene-2-heading-div" style="margin-bottom: 30px;"> <div id="" class="scene-2-heading" style="min-height: 100px;"> Machine translation to <br class="break-at-laptop" /> indian regional languages </div> <div id="" class="absolute disable" style="top: 0px;"> </div> </div> <div class="hindi-text hindi-div-box"> <div style="padding: 40px 40px 100px 40px;" class="relative"> Divine sound is the cause of all manifestation. The knower of the mystery of <br class="break-at-laptop" /> sound knows the mystery of the whole universe </div> <div class="border-line relative"> <img class="absolute " src="https://res.cloudinary.com/dh7kluimp/image/upload/v1607414383/tanmayproject/ic_arrow_jclotz.svg" /> </div> <div style="padding: 40px 40px 100px 40px;"> दिव्य ध्वनि सभी प्रकट होने का कारण है। ध्वनि के रहस्य का ज्ञाता पूरे <br class="break-at-laptop" />ब्रह्मांड के रहस्य को जानता है </div> <div> </div> </div> </div>',
+];
 let imgUrls = [
   "https://res.cloudinary.com/dh7kluimp/image/upload/v1606319050/tanmayproject/Group_344_ldist6.png",
   "https://res.cloudinary.com/dh7kluimp/image/upload/v1606319925/tanmayproject/Group_345_1_ko11j9.png",
@@ -165,36 +173,68 @@ let carasol2IdCount = 0,
   radioButtonIdScene2 = 0;
 
 let imagesceneDescriptionId = ["scene-2-heading", "scene-2-heading-absolute"];
+let imagesceneDescriptionIdMobile = [
+  "scene-2-heading-mobile",
+  "scene-2-heading-absolute-mobile",
+];
 
 function setImage(clickShowId) {
   let elementToDisable = document.getElementById(
     imagesceneDescriptionId[scene2toggleId % imagesceneDescriptionId.length]
   );
+  let mobileElementToDisable = document.getElementById(
+    imagesceneDescriptionIdMobile[
+      scene2toggleId % imagesceneDescriptionIdMobile.length
+    ]
+  );
   elementToDisable.classList.add("disable");
-
+  mobileElementToDisable.classList.add("disable");
   let elementToEnable = document.getElementById(
     imagesceneDescriptionId[
       (scene2toggleId + 1) % imagesceneDescriptionId.length
     ]
   );
+  let mobileElementToEnable = document.getElementById(
+    imagesceneDescriptionIdMobile[
+      (scene2toggleId + 1) % imagesceneDescriptionIdMobile.length
+    ]
+  );
+
   elementToEnable.classList.remove("disable");
+  mobileElementToEnable.classList.remove("disable");
 
   setTimeout(() => {
-    elementToEnable.setAttribute(
-      "src",
-      imgUrls[
+    elementToEnable.innerHTML =
+      secondCarosoulHtml[
         clickShowId !== undefined
           ? clickShowId
-          : (carasol2IdCount + 1) % imgUrls.length
-      ]
-    );
-    elementToDisable.setAttribute("src", "");
+          : (carasol2IdCount + 1) % secondCarosoulHtml.length
+      ];
+    mobileElementToEnable.innerHTML =
+      secondCarosoulHtmlMobile[
+        clickShowId !== undefined
+          ? clickShowId
+          : (carasol2IdCount + 1) % secondCarosoulHtmlMobile.length
+      ];
+
+    // elementToEnable.setAttribute(
+    //   "src",
+    //   secondCarosoulHtml[
+    //     clickShowId !== undefined
+    //       ? clickShowId
+    //       : (carasol2IdCount + 1) % secondCarosoulHtml.length
+    //   ]
+    // );
+    elementToDisable.innerHTML = "";
+    mobileElementToDisable.innerHTML = "";
+    // elementToDisable.setAttribute("src", "");
     // = "";
-    if (clickShowId) {
+    if (clickShowId !== undefined && clickShowId !== null) {
       carasol2IdCount = clickShowId;
     } else {
       carasol2IdCount++;
     }
+    console.log("carasol2IdCount", carasol2IdCount);
   }, 200);
   scene2toggleId++;
 }
@@ -227,7 +267,7 @@ function scene2reset(clickShowId) {
   setImage(clickShowId);
   radioButtonChangeScene2(clickShowId);
   radioButtonIdScene2 = clickShowId;
-  carasol2IdCount = clickShowId;
+  // carasol2IdCount = clickShowId;
 
   carasol2();
 }

@@ -823,7 +823,154 @@ top: 6624px; */
 }
 
 .video-transcription-for-your {
-  background: #fafddc;
+  /* background: #fafddc;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12); */
+  border-radius: 36px;
+}
+
+.pic-2-card-video-number {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+  /* or 14px */
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(0, 0, 0, 0.44);
+  margin-top: 8px;
+}
+
+.pic-2-zero-row1 {
+  width: 112px;
+  height: 8px;
+  left: 928px;
+  top: 3311px;
+
+  /* Black */
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+  margin-top: 8px;
+}
+
+.pic-2-zero-row2 {
+  width: 146px;
+  height: 8px;
+  left: 928px;
+  top: 3327px;
+  margin-top: 8px;
+
+  /* Black */
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+
+.pic-2-six-row1 {
+  width: 153px;
+  height: 8px;
+  left: 929px;
+  top: 3371px;
+
+  /* Black */
+  margin-top: 8px;
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+.pic-2-six-row2 {
+  width: 114px;
+  height: 8px;
+  left: 928px;
+  top: 3387px;
+
+  /* Black */
+  margin-top: 8px;
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+.pic-2-twelve-row1 {
+  width: 73px;
+  height: 8px;
+  left: 929px;
+  top: 3429px;
+  margin-top: 8px;
+
+  background: #6a47ff;
+  border-radius: 44px;
+}
+.pic-2-twelve-row2 {
+  width: 146px;
+  height: 8px;
+  left: 928px;
+  top: 3445px;
+  margin-top: 8px;
+
+  background: #6a47ff;
+  border-radius: 44px;
+}
+.pic-2-eighteen-row1 {
+  width: 95px;
+  height: 8px;
+  left: 929px;
+  top: 3489px;
+
+  /* Black */
+  margin-top: 8px;
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+
+.pic-2-eighteen-row2 {
+  width: 120px;
+  height: 8px;
+  left: 928px;
+  top: 3505px;
+
+  /* Black */
+
+  background: #11142d;
+  margin-top: 8px;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+
+.hindi-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  /* display: flex;
+  align-items: center; */
+
+  color: #000000;
+}
+.hindi-div-box {
+  background: #ffffff;
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
   border-radius: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.border-line {
+  border: 1px solid #e2e2e5;
+}
+.border-line img {
+  left: 40px;
+  top: -15px;
 }
