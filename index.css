@@ -628,6 +628,9 @@ text-align: center; */
 .get-in-touch-looking-for-multilingual {
   padding: 13px 48px;
   height: 45px;
+  margin: 10px 0px;
+  max-width: 200px;
+
   background: #ffffff;
   border-radius: 12px;
 
@@ -637,8 +640,6 @@ text-align: center; */
   font-size: 14px;
   line-height: 110%;
   color: #11142d;
-  margin: 10px 0px;
-  max-width: 200px;
   align-self: flex-end;
 }
 .looking-for-multilingual-content {
@@ -972,4 +973,7 @@ top: 6624px; */
 .border-line img {
   left: 40px;
   top: -15px;
+}
+.sliding-myform-href {
+  text-decoration: none !important;
 }

@@ -38,7 +38,8 @@
            <a href="#use-case-div"> Use Case </a>&nbsp;&#9660;
         </span> -->
 
-        <button class="get-in-touch-color get-in-touch-1">GET IN TOUCH </button>
+       <a href="#myForm">       <button class="get-in-touch-color get-in-touch-1">GET IN TOUCH </button></a>
+
     </div>
     <span style="font-size:30px;cursor:pointer" class="show-till-laptop" onclick="openNav()">&#9776; </span>
 
@@ -65,7 +66,7 @@
                 </span>
                 <br />
                 <br />
-                <button class="get-in-touch-color get-in-touch-2">GET IN TOUCH </button>
+      <a href="#myForm">            <button class="get-in-touch-color get-in-touch-2">GET IN TOUCH </button></a>
             </div>
         </div>
     </div>
@@ -174,9 +175,12 @@
                 <img src="https://res.cloudinary.com/dch9bhewr/image/upload/v1607572784/autovox/Group_324_d8vtvh.svg"
                     alt="design" style="align-self: flex-start ; margin-top: 10px;" />
             </div>
+            <a class="sliding-myform-href" href="#myForm">  
             <div class="early-api-access" style="margin-top: 23px;">
                 GET EARLY API ACCESS 
             </div>
+            </a>
+
         </div>
         <div class=" col-md-6 flex mid-section-img hide-in-low" style="justify-content: flex-end;">
             <img src="https://res.cloudinary.com/dch9bhewr/image/upload/v1607572784/autovox/Group_324_d8vtvh.svg" alt="design"  style="align-self: flex-start ; margin-top: 10px;" />
@@ -435,9 +439,15 @@
         <div class="looking-for-multilingual-content col-12 col-sm-12 col-md-8">
             Looking for multilingual <br /> content play?
         </div>
-        <div class=" text-align-center col-12 col-sm-12 col-md-4 get-in-touch-looking-for-multilingual">
+        <a class="sliding-myform-href col-12 col-sm-12 col-md-4"  href="#myForm" style="width: 100%; display: flex;cursor: pointer;margin: 0px; padding: 0px;">  
+    
+        <div class=" text-align-center  get-in-touch-looking-for-multilingual">
+        
             GET IN TOUCH
         </div>
+            </a>
+
+
     </div>
 </div>
 <!-- section---6-------over -->
@@ -828,7 +838,7 @@
 <div id="mySidenav" class="sidenav ">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#use-case-div" onclick="closeNav()">Use Case</a>
-    <a href="">GET IN TOUCH</a>
+    <a href="#myForm" onclick="closeNav()" >GET IN TOUCH</a>
     <!-- <a href="#">Contact</a> -->
 </div>
 <script src="formSubmit.js"> </script>
@@ -837,6 +847,16 @@
 <script src="drawer.js"> </script>
 <script src="index.js"></script>
 <script src="map.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-36Y5XN728C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-36Y5XN728C');
+</script>
 
 <script 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF6efzGFvwAJj_eEX0gbusSmc3LyN11ZQ&callback=initMap">
