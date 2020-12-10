@@ -513,6 +513,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .personalized-card {
+    padding: 20px;
+  }
   .language-images {
     width: 400px;
   }
