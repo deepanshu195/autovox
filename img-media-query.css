@@ -61,7 +61,7 @@
 }
 .video-transcription-for-your {
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
-  width: fit-content;
+  width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -114,6 +114,9 @@
     top: 60px;
     right: 10px;
     width: 400px;
+  }
+  .inside-autovox-radio-button-div {
+    right: 5vw;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -176,6 +179,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .divine-sound-info-div {
+    right: 0px;
+  }
 }
 @media screen and (max-width: 992px) {
   .high-quility-speech-info-div {
@@ -218,12 +224,16 @@
   .inside-autovox-radio-button-div {
     position: absolute;
   }
+  .width-max-content {
+    width: max-content;
+  }
 }
 
 @media screen and (max-width: 992px) and (min-width: 767px) {
   .inside-autovox-radio-button-div {
     top: 280px;
     right: 10vw;
+    margin-top: 0px;
   }
   .automated-pic-show {
     width: 105%;
