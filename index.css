@@ -39,7 +39,6 @@ header {
   backdrop-filter: blur(66px); */
 }
 .section-1 {
-  /* background-image: url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606572040/tanmayproject/Bg_gif_pbkt0c.gif"); */
   background-size: 101%;
   /* backdrop-filter: blur(66px); */
   /* Note: backdrop-filter has minimal browser support */
@@ -795,7 +794,7 @@ top: 6624px; */
 }
 
 .section-2 {
-  background-image: url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606571996/tanmayproject/2nd_Section_BG_g1hu1u.png");
+  background-image: url("https://res.cloudinary.com/dch9bhewr/image/upload/v1607573427/autovox/2nd_Section_BG_sevgsb.png");
 }
 #success-register {
   width: 100%;
