@@ -77,6 +77,9 @@
   position: relative;
   top: 10px;
 }
+.submit-button {
+  justify-content: flex-end;
+}
 
 @media screen and (min-width: 1300px) {
 }
@@ -580,6 +583,9 @@
   .form-fill {
     background: none;
     color: white;
+  }
+  .submit-button {
+    justify-content: flex-start;
   }
   .form-fill-submit-button {
     background: white;
