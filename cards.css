@@ -91,10 +91,8 @@ align-items: center; */
   width: 375px !important;
 }
 .scene-2-description .card-deck {
-  /* width: fit-content;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 70px; */
+  display: flex;
+  justify-content: center;
 }
 
 .automated-pic-show {

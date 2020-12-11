@@ -13,8 +13,8 @@
   cursor: pointer;
 }
 .inside-autovox-radio-button-div {
-  top: 400px;
-  right: 14vw;
+  top: 300px;
+  right: 10vw;
 }
 .section-5 {
   overflow: hidden;
@@ -59,6 +59,27 @@
 .show-in-low-block {
   display: none;
 }
+.video-transcription-for-your {
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divine-sound-info-div {
+  top: -85px;
+  right: -100px;
+}
+.transcription-11-img {
+  position: relative;
+  top: 10px;
+}
+.divine-sound-info-div img {
+  position: relative;
+  top: 10px;
+}
+.submit-button {
+  justify-content: flex-end;
+}
 
 @media screen and (min-width: 1300px) {
 }
@@ -94,6 +115,9 @@
     right: 10px;
     width: 400px;
   }
+  .inside-autovox-radio-button-div {
+    right: 5vw;
+  }
 }
 @media screen and (max-width: 1200px) {
   .use-case-radio-button-div {
@@ -110,13 +134,13 @@
     width: 275px !important;
   }
   .scene-2-description .card-deck {
-    width: fit-content;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 70px;
+    /* width: fit-content; */
+    /* margin-left: auto !important;
+    margin-right: auto !important; */
+    /* margin-top: 70px; */
   }
   .high-quility-speech-info-div {
-    right: -100px;
+    right: 0px;
     top: -65px;
   }
   .arrow-img {
@@ -155,6 +179,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .divine-sound-info-div {
+    right: 0px;
+  }
 }
 @media screen and (max-width: 992px) {
   .high-quility-speech-info-div {
@@ -190,12 +217,15 @@
 }
 @media screen and (min-width: 992px) {
   .high-quility-speech-info-div {
-    right: -100px;
-    top: -65px;
+    right: -125px;
+    top: -70px;
     /* position: absolute; */
   }
   .inside-autovox-radio-button-div {
     position: absolute;
+  }
+  .width-max-content {
+    width: max-content;
   }
 }
 
@@ -203,6 +233,7 @@
   .inside-autovox-radio-button-div {
     top: 280px;
     right: 10vw;
+    margin-top: 0px;
   }
   .automated-pic-show {
     width: 105%;
@@ -443,6 +474,16 @@
   .section-6 .row {
     margin-left: 0px;
   }
+  .high-quility-speech-info-div {
+    bottom: -35px;
+    top: auto;
+    left: 0px;
+    right: auto;
+  }
+  .video-transcription-for-your {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -472,6 +513,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .personalized-card {
+    padding: 20px;
+  }
   .language-images {
     width: 400px;
   }
@@ -552,6 +596,9 @@
   .form-fill {
     background: none;
     color: white;
+  }
+  .submit-button {
+    justify-content: flex-start;
   }
   .form-fill-submit-button {
     background: white;

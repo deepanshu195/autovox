@@ -39,7 +39,6 @@ header {
   backdrop-filter: blur(66px); */
 }
 .section-1 {
-  /* background-image: url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606572040/tanmayproject/Bg_gif_pbkt0c.gif"); */
   background-size: 101%;
   /* backdrop-filter: blur(66px); */
   /* Note: backdrop-filter has minimal browser support */
@@ -109,6 +108,18 @@ text-align: center; */
 }
 .autovox {
   font-size: 23px;
+  font-weight: 400;
+}
+.copyright {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  font-size: 80%;
   font-weight: 400;
 }
 .flex {
@@ -629,6 +640,9 @@ text-align: center; */
 .get-in-touch-looking-for-multilingual {
   padding: 13px 48px;
   height: 45px;
+  margin: 10px 0px;
+  max-width: 291px;
+
   background: #ffffff;
   border-radius: 12px;
 
@@ -638,8 +652,6 @@ text-align: center; */
   font-size: 14px;
   line-height: 110%;
   color: #11142d;
-  margin: 10px 0px;
-  max-width: 200px;
   align-self: flex-end;
 }
 .looking-for-multilingual-content {
@@ -750,7 +762,7 @@ align-items: center; */
 }
 .section-9 {
   padding-top: 60px;
-  padding-bottom: 102px;
+  padding-bottom: 60px;
 }
 html {
   scroll-behavior: smooth;
@@ -774,7 +786,7 @@ header a:hover {
   padding: 13px 40px;
 
   /* position: absolute; */
-  width: 177px;
+  width: 200px;
   height: 56px;
   /* left: 1096px;
 top: 6624px; */
@@ -795,7 +807,7 @@ top: 6624px; */
 }
 
 .section-2 {
-  background-image: url("https://res.cloudinary.com/dh7kluimp/image/upload/v1606571996/tanmayproject/2nd_Section_BG_g1hu1u.png");
+  background-image: url("https://res.cloudinary.com/dch9bhewr/image/upload/v1607573427/autovox/2nd_Section_BG_sevgsb.png");
 }
 #success-register {
   width: 100%;
@@ -823,7 +835,157 @@ top: 6624px; */
 }
 
 .video-transcription-for-your {
-  background: #fafddc;
+  /* background: #fafddc;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12); */
+  border-radius: 36px;
+}
+
+.pic-2-card-video-number {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120%;
+  /* or 14px */
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(0, 0, 0, 0.44);
+  margin-top: 8px;
+}
+
+.pic-2-zero-row1 {
+  width: 112px;
+  height: 8px;
+  left: 928px;
+  top: 3311px;
+
+  /* Black */
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+  margin-top: 8px;
+}
+
+.pic-2-zero-row2 {
+  width: 146px;
+  height: 8px;
+  left: 928px;
+  top: 3327px;
+  margin-top: 8px;
+
+  /* Black */
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+
+.pic-2-six-row1 {
+  width: 153px;
+  height: 8px;
+  left: 929px;
+  top: 3371px;
+
+  /* Black */
+  margin-top: 8px;
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+.pic-2-six-row2 {
+  width: 114px;
+  height: 8px;
+  left: 928px;
+  top: 3387px;
+
+  /* Black */
+  margin-top: 8px;
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+.pic-2-twelve-row1 {
+  width: 73px;
+  height: 8px;
+  left: 929px;
+  top: 3429px;
+  margin-top: 8px;
+
+  background: #6a47ff;
+  border-radius: 44px;
+}
+.pic-2-twelve-row2 {
+  width: 146px;
+  height: 8px;
+  left: 928px;
+  top: 3445px;
+  margin-top: 8px;
+
+  background: #6a47ff;
+  border-radius: 44px;
+}
+.pic-2-eighteen-row1 {
+  width: 95px;
+  height: 8px;
+  left: 929px;
+  top: 3489px;
+
+  /* Black */
+  margin-top: 8px;
+
+  background: #11142d;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+
+.pic-2-eighteen-row2 {
+  width: 120px;
+  height: 8px;
+  left: 928px;
+  top: 3505px;
+
+  /* Black */
+
+  background: #11142d;
+  margin-top: 8px;
+  opacity: 0.24;
+  border-radius: 44px;
+}
+
+.hindi-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  /* display: flex;
+  align-items: center; */
+
+  color: #000000;
+}
+.hindi-div-box {
+  background: #ffffff;
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.12);
   border-radius: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.border-line {
+  border: 1px solid #e2e2e5;
+}
+.border-line img {
+  left: 40px;
+  top: -15px;
+}
+.sliding-myform-href {
+  text-decoration: none !important;
 }
