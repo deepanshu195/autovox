@@ -50,26 +50,30 @@ function handleForm(event) {
   object.forEach((val) => {
     objectToSend[val.apiKey] = document.getElementById(val.key).value;
   });
+  console.log(objectToSend);
   callAirTable(objectToSend);
 }
 form.addEventListener("submit", handleForm);
 function callAirTable(data) {
-  fetch("https://api.airtable.com/v0/appIwdY3JfUChjVCR/Autovox", {
+  fetch("https://api.airtable.com/v0/appcbOK2knQaFkxWJ/Table%201", {
     method: "POST", // or 'PUT'
     headers: {
       "Content-Type": "application/json",
-      Authorization: "Bearer keyGBHPMqCwYEKnMe",
+      Authorization: "Bearer key4SkDrRcyMtDwbG",
     },
     body: JSON.stringify({
       records: [
         {
-          fiel: data,
+          fields: data,
         },
       ],
     }),
   })
     .then((response) => response.json())
     .then((data) => {
+      document.getElementById("failed-register").style.display = "none";
+      document.getElementById("success-register").style.display = "none";
+
       if (data && data.error) {
         document.getElementById("failed-register").style.display = "inline";
         return;
