@@ -320,7 +320,7 @@
   }
 
   .language-side-images {
-    width: 50px;
+    /* width: 50px; */
   }
   .left-image {
     bottom: -255px;
@@ -342,6 +342,7 @@
     /* margin-top: 23px;
     cursor: pointer; */
     padding: 20px;
+    height: 280px;
   }
   .section-3 .card-deck .card .card-imgs {
     width: 150px;
@@ -522,7 +523,7 @@
   }
 
   .language-side-images {
-    width: 35px;
+    width: 50px;
   }
   .left-image {
     bottom: -200px;
