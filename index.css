@@ -977,6 +977,12 @@ top: 6624px; */
   margin-right: auto;
   margin-left: auto;
   width: fit-content;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .border-line {
