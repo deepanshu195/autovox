@@ -231,7 +231,6 @@ function setImage(clickShowId) {
     } else {
       carasol2IdCount++;
     }
-    console.log("carasol2IdCount", carasol2IdCount);
   }, 200);
   scene2toggleId++;
 }
