@@ -573,7 +573,8 @@
     align-self: center;
     width: fit-content;
     height: 316px;
-    min-width: 300px;
+    width: 300px;
+    min-width: auto;
   }
   .mid-section-img img {
     width: 150px;
