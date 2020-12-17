@@ -1,0 +1,13 @@
+image:
+  name: banst/awscli
+  entrypoint: [""]
+stages:
+  - deploy
+deploy:
+  stage: deploy
+  script:
+    - aws configure set region ap-south-1
+    - aws s3 sync ./* s3://$S3_BUCKET --delete
+    - aws cloudfront create-invalidation --distribution-id E12PYEZV3Y2X59 --paths /* || true
+  only:
+    - master
