@@ -333,6 +333,9 @@
     width: 65%;
     object-fit: contain;
   }
+  .margin-top-10-in-small {
+    margin-top: 15px;
+  }
 
   .language-side-images {
     /* width: 50px; */
@@ -357,11 +360,12 @@
     /* margin-top: 23px;
     cursor: pointer; */
     padding: 20px;
-    height: 280px;
+    min-height: 312px;
   }
   .section-3 .card-deck .card .card-imgs {
     width: 150px;
     height: 110px;
+    transform: scale(1.5);
   }
   .section-3 .card-deck .card-body {
     padding: 5px;
@@ -395,7 +399,7 @@
     /* left: 32%; */
   }
   .section-6 {
-    padding: 30px 30px;
+    padding: 33px 33px;
   }
   .margin-top-change-screen-res {
     margin-top: 100px;
@@ -530,6 +534,15 @@
 }
 
 @media screen and (max-width: 576px) {
+  .section-2,
+  .section-3 {
+    padding: 0px 20px;
+  }
+  .section-3 .card-deck .card .card-imgs {
+    height: 130px;
+    transform: scale(1.5);
+  }
+
   .personalized-card {
     padding: 20px;
   }
@@ -556,14 +569,16 @@
   .section-3 .card-deck .card {
     align-self: center;
     width: fit-content;
+    height: 316px;
+    min-width: 300px;
   }
   .mid-section-img img {
     width: 150px;
   }
   .mid-section {
     margin-top: 13vh;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 33px;
+    padding-right: 33px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -652,7 +667,7 @@
   }
 }
 .height-100 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 460px) {
