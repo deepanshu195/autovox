@@ -534,8 +534,11 @@
 }
 
 @media screen and (max-width: 576px) {
-  .section-2,
   .section-3 {
+    padding: 0px 20px;
+  }
+  .language-should-not-barrier-parent,
+  .audio-transcription {
     padding: 0px 20px;
   }
   .section-3 .card-deck .card .card-imgs {
