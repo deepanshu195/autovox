@@ -545,6 +545,9 @@
     height: 130px;
     transform: scale(1.5);
   }
+  .margin-top-0-small {
+    margin-top: 0px !important;
+  }
 
   .personalized-card {
     padding: 20px;

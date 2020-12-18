@@ -512,12 +512,13 @@ text-align: center; */
 .early-api-access {
   background: #ffffff;
   border-radius: 12px;
-  padding: 13px 48px;
+  padding: 19px 48px;
   font-family: Proxima Nova;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 110%;
+  height: 56px;
   /* identical to box height, or 129% */
 
   text-transform: uppercase;
@@ -638,8 +639,8 @@ text-align: center; */
 }
 
 .get-in-touch-looking-for-multilingual {
-  padding: 13px 48px;
-  height: 45px;
+  padding: 20px 48px;
+  height: 56px;
   margin: 10px 0px;
   max-width: 291px;
 
@@ -680,7 +681,7 @@ text-align: center; */
 .data-and-diversity {
   font-family: Proxima Nova;
   font-style: normal;
-  font-weight: 100;
+  font-weight: bold;
   /* font-weight: var(--black-text-font-weight); */
   font-size: var(--black-text-font-size);
   line-height: 110%;
@@ -796,6 +797,11 @@ top: 6624px; */
   border-radius: 12px;
   /* float: right; */
   /* clear: both; */
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .form-fill-heading {
